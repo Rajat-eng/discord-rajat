@@ -17,7 +17,6 @@ export const FileUpload = ({ onChange, value, endpoint }: FileUploadProps) => {
   const fileType = value?.split(".").pop();
 
   function handleDropZoneChange(files: File[]) {
-    console.log(files);
     if (files.length > 0) {
       const reader = new FileReader();
 
