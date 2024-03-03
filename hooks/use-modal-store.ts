@@ -26,7 +26,7 @@ interface ModelStore {
   type: ModalType | null;
   data: ModalData;
   isOpen: Boolean;
-  onOpen: (type: ModalType, data: ModalData) => void;
+  onOpen: (type: ModalType, data?: ModalData) => void;
   onClose: () => void;
 }
 
